@@ -4,10 +4,10 @@
     Guid id = Guid.NewGuid();
 }
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Rookies">Back to List</a>
 </div>
 <h3>Create</h3>
-<div>@ViewBag.Data</div>
+
 <form method="POST">
     <div asp-validation-summary="ModelOnly" class="text-danger"></div>
     <input type="hidden" asp-for="Id" value=@id/>

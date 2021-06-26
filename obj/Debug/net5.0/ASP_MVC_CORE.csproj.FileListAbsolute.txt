@@ -41,4 +41,3 @@ C:\Rokie\ASP_MVC_CORE\obj\Debug\net5.0\ASP_MVC_CORE.genruntimeconfig.cache
 C:\Rokie\ASP_MVC_CORE\obj\Debug\net5.0\ASP_MVC_CORE.csproj.CopyComplete
 C:\Rokie\ASP_MVC_CORE\obj\Debug\net5.0\Razor\Views\Member\Create.cshtml.g.cs
 C:\Rokie\ASP_MVC_CORE\obj\Debug\net5.0\Razor\Views\Member\Edit.cshtml.g.cs
-C:\Rokie\ASP_MVC_CORE\obj\Debug\net5.0\Razor\Views\Member\Delete.cshtml.g.cs
