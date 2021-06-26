@@ -4,6 +4,12 @@
 // Write your JavaScript code.
 
 var deleteModal = document.getElementById("DeleteModal");
+var closeSymbol = document.getElementById("Close");
+var closeButton = document.getElementById("CloseButton");
+
+function OnClickClose(){
+    deleteModal.hidden = true;
+}
 
 function OnClickDelete(){
     deleteModal.hidden = false;
