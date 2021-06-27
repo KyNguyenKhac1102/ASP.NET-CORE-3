@@ -70,18 +70,33 @@ namespace ASP_CORE_MVC.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index()
+        
+        public IActionResult Index(int? pageIndex, string sortBy)
         {
-            return View(memberList);
-        }
+            if(!pageIndex.HasValue){
+                pageIndex = 1;
+            }
+            if(String.IsNullOrEmpty(sortBy)){
+                sortBy = "All";
+            }
 
-        public IActionResult Rookies(){
-            return View(memberList);
+            return Content($"PageIndex: {pageIndex}, sortBy: {sortBy}");
+        }
+        
+        public IActionResult Rookies(string sortBy){
+            List<Member> list = new List<Member>();
+            if(String.IsNullOrEmpty(sortBy)){
+                list = memberList;
+            }
+            else if(sortBy == "Male"){
+                list = memberList.Where(x => x.Gender == "Male").ToList();
+            }
+           
+           return View(list);
         }
 
         public IActionResult Create()
         {
-
             return View();
         }
         [HttpPost]
