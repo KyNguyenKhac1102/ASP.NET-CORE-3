@@ -71,17 +71,6 @@ namespace ASP_CORE_MVC.Controllers
         }
 
         
-        public IActionResult Index(int? pageIndex, string sortBy)
-        {
-            if(!pageIndex.HasValue){
-                pageIndex = 1;
-            }
-            if(String.IsNullOrEmpty(sortBy)){
-                sortBy = "All";
-            }
-
-            return Content($"PageIndex: {pageIndex}, sortBy: {sortBy}");
-        }
         
         public IActionResult Rookies(string sortBy){
             List<Member> list = new List<Member>();
