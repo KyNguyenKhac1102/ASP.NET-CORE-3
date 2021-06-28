@@ -8,6 +8,8 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using ASP_MVC_CORE.Services;
+using Microsoft.AspNetCore.Http;
 
 namespace ASP_MVC_CORE
 {
@@ -23,6 +25,17 @@ namespace ASP_MVC_CORE
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDistributedMemoryCache();
+
+            services.AddSession(options =>
+            {
+                options.Cookie.Name = ".Confirm.Session";
+                options.IdleTimeout = TimeSpan.FromSeconds(10);
+                options.Cookie.IsEssential = true;
+            });
+            services.AddHttpContextAccessor();
+            services.AddScoped<IMemeberServices, MemberService>();
+
             services.AddControllersWithViews();
         }
 
@@ -45,7 +58,7 @@ namespace ASP_MVC_CORE
             app.UseRouting();
 
             app.UseAuthorization();
-
+            app.UseSession();
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(

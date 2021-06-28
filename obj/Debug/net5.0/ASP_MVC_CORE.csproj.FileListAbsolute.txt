@@ -84,3 +84,5 @@ C:\Rokie\Clone\ASP-.NET-CORE-Assignment-3\obj\Debug\net5.0\ref\ASP_MVC_CORE.dll
 C:\Rokie\Clone\ASP-.NET-CORE-Assignment-3\obj\Debug\net5.0\ASP_MVC_CORE.pdb
 C:\Rokie\Clone\ASP-.NET-CORE-Assignment-3\obj\Debug\net5.0\ASP_MVC_CORE.genruntimeconfig.cache
 C:\Rokie\Clone\ASP-.NET-CORE-Assignment-3\obj\Debug\net5.0\ASP_MVC_CORE.csproj.CopyComplete
+C:\Rokie\Clone\ASP-.NET-CORE-Assignment-3\obj\Debug\net5.0\Razor\Views\Member\Detail.cshtml.g.cs
+C:\Rokie\Clone\ASP-.NET-CORE-Assignment-3\obj\Debug\net5.0\Razor\Views\Member\Confirm.cshtml.g.cs

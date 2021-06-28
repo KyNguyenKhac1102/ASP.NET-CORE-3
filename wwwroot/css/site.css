@@ -69,3 +69,27 @@ body {
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
 }
+
+@keyframes confirmText{
+  0% {color: yellow; left:-200px; top:0px;}
+  50% {color: rgb(19, 0, 128); left:200px; top:0px;}
+  100% {color : green; left: 0; top: 0}
+}
+
+.animate-text{
+  position: relative;
+  animation-name: confirmText;
+  animation-duration: 3s;
+}
+
+@keyframes note{
+  0% {color: white; bottom: -100px;left: 0;}
+  50% {color: rgb(105, 107, 105); bottom: -50px;left: 0;}
+  100% {color: black; bottom: 0; left: 0;}
+}
+
+.note{
+  position: relative;
+  animation-name: note;
+  animation-duration: 3s;
+}

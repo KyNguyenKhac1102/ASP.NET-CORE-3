@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using ASP_MVC_CORE.Models;
+using Microsoft.AspNetCore.Http;
 
 namespace ASP_MVC_CORE.Controllers
 {
@@ -20,12 +21,14 @@ namespace ASP_MVC_CORE.Controllers
 
         public IActionResult Index()
         {
+            HttpContext.Session.SetString("Session1", "Ky");
             return View();
         }
 
         public IActionResult Privacy()
         {
-            return View();
+            var user = HttpContext.Session.GetString("Session1");
+            return View("Privacy", user);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
