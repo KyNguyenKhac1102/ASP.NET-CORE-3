@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Rokie\\ASP_MVC_CORE\\ASP_MVC_CORE.csproj": {}
+    "C:\\Rokie\\Clone\\ASP-.NET-CORE-Assignment-3\\ASP_MVC_CORE.csproj": {}
   },
   "projects": {
-    "C:\\Rokie\\ASP_MVC_CORE\\ASP_MVC_CORE.csproj": {
+    "C:\\Rokie\\Clone\\ASP-.NET-CORE-Assignment-3\\ASP_MVC_CORE.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Rokie\\ASP_MVC_CORE\\ASP_MVC_CORE.csproj",
+        "projectUniqueName": "C:\\Rokie\\Clone\\ASP-.NET-CORE-Assignment-3\\ASP_MVC_CORE.csproj",
         "projectName": "ASP_MVC_CORE",
-        "projectPath": "C:\\Rokie\\ASP_MVC_CORE\\ASP_MVC_CORE.csproj",
+        "projectPath": "C:\\Rokie\\Clone\\ASP-.NET-CORE-Assignment-3\\ASP_MVC_CORE.csproj",
         "packagesPath": "C:\\Users\\zzice209\\.nuget\\packages\\",
-        "outputPath": "C:\\Rokie\\ASP_MVC_CORE\\obj\\",
+        "outputPath": "C:\\Rokie\\Clone\\ASP-.NET-CORE-Assignment-3\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

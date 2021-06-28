@@ -111,8 +111,12 @@ namespace ASP_CORE_MVC.Controllers
         public IActionResult Edit(Member member)
         {
             if(ModelState.IsValid){
-                memberList.Remove(memberList.FirstOrDefault(x => x.Id == member.Id));
-                memberList.Add(member);
+                var model = memberList.FirstOrDefault(x => x.Id == member.Id);
+                model.FirstName = member.FirstName;
+                model.LastName = member.LastName;
+                model.Gender = member.Gender;
+                model.DateOfBirth = member.DateOfBirth;
+                model.Email = member.Email;
                 return RedirectToAction("Rookies");
             }
 
